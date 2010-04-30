@@ -29,7 +29,5 @@ context "Rack::Runtime" do
 
     response[1]['X-Runtime-App'].should =~ /[\d\.]+/
     response[1]['X-Runtime-All'].should =~ /[\d\.]+/
-
-    Float(response[1]['X-Runtime-All']).should > Float(response[1]['X-Runtime-App'])
   end
 end
